@@ -25,6 +25,7 @@ main {
 }
 
 .step-img1 {
+  width: 280px;
   height: 150px;
   background-image: url(img/flow01.png);
   background-size: cover;
@@ -32,6 +33,7 @@ main {
 }
 
 .step-img2 {
+  width: 280px;
   height: 150px;
   background-image: url(img/flow02.png);
   background-size: cover;
@@ -39,6 +41,7 @@ main {
 }
 
 .step-img3 {
+  width: 280px;
   height: 150px;
   background-image: url(img/flow03.png);
   background-size: cover;
@@ -67,4 +70,36 @@ main {
 }
 
 
+/* レスポンシブ対応 */
+@media screen and (max-width:768px) {
+	main {
+		width: 100%;
+		margin: 50px auto 30px auto;
 
+	}
+
+	.step-box {
+		width: 90%;
+		display: block;
+		float: none;
+		position: static;
+		margin:0 0 20px 0;
+	}
+
+	.step-img1, .step-img2, .step-img3 {
+		width: 100%;
+		max-width: 100%;
+		position: static;
+	}
+
+	.text {
+		width: 100%;
+		position: static;
+	}
+
+	.step-num {
+		width: 100%;
+		position: static;
+	}
+
+}
